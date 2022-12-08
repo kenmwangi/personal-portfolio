@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to Ken Mwangi's Portfolio
 
-## Getting Started
+[![CI](https://github.com/kenmwangi/personal-portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/kenmwangi/personal-portfolio/actions/workflows/main.yml)
 
-First, run the development server:
+## Motivation
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+**Goal:** I wanted to have a digital garden to display what I am currently doing, documenting my full-stack journey and share knowledge others.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How I started working on this project
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The primary focus is to have a simple yet resourceful personal portfolio.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- I'a not a designer and as I build this I don't have one to provide a design so I found template from Figma community:
+- Tasks were handled based on Clickup Board: file:///home/ken/Pictures/Screenshots/Kanban.png
+- Bulding scalable Architecture was priority for this project (I plan to work on it for long, lol! 🙈️)
+- I loved the idea of feature branches and Pull Requests. [Example](https://profy.dev/article/continuous-integration-with-github-actions)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Choice of Technologies used?
 
-## Learn More
+- The choice for using Nextjs is based on it being _The React Framework
+  for Production_. I was convinced.
+- Typescript - I am life-long seeker of less buggy code. Easy to maintain and Refactoring will make me to code more. Convinced? Not yet? [Reason](https://ik.imagekit.io/87wct6jq4ql/tr:w-640/https://media.graphassets.com/3qi4Jf2SJGLR3j20wb5D)
+- Tailwindcss - provides great way of styling using - utility-first styling that is seamlessly integrating into with Nextjs code.
+- I plan to use Cypress for testing but I will explore Testing Library considering it is a go-to-library in the React Community.
 
-To learn more about Next.js, take a look at the following resources:
+## Improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Add end-to-end tests with Cypress
+- Creating a custom server as I improve my backend knowledge because I plan to make this portfolio full-stack app.
