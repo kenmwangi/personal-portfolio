@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  # runs on pushes to main branch
+  push:
+    branches: [main]
+  # make also run inside pull requests targeting main branch
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    # uses Ubnutu Docker image (a virtual machine)
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      # install dependencies
+      - run: npm ci
+      # run ESLint and Prettier
+      - run: npm run lint
+      - run: npm run prettier
+      # No build errors
+      - run: npm run build
+      # run tests with Cypress
