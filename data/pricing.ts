@@ -42,7 +42,7 @@ export const pricingPlans = [
       '5 Products',
       'Up to 1,000 subscribers',
       'basic analytics',
-      '48-hour support response time',
+      'Fully-featured maintenance and customer support for 24 hours',
     ],
     cta: 'Start your trial',
     mostPopular: false,
