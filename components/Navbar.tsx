@@ -8,7 +8,8 @@ const Navbar = () => {
   const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
   return (
     <nav className="py-6 max-w-7xl px-4 sm:px-6 lg:px-8 tracking-wider">
-      <div className="flex items-center justify-between mx-auto mt-[30px] mb-[170px]">
+      {/* mb-[170px] */}
+      <div className="flex items-center justify-between mx-auto mt-[30px]">
         <Link
           href="/"
           className="font-Spectral text-3xl font-semibold text-[#1B73E8]"
