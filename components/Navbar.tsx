@@ -15,12 +15,15 @@ const Navbar = () => {
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
-          <div className="flex justify-between gap-16 text-sm font-normal">
+          <div className="flex justify-between gap-16 text-[15.5px] font-normal">
             {navLinks.map((navLink) => {
               const { id, href, link } = navLink;
               return (
                 <ul key={id}>
-                  <Link href={href} className="tracking-wider">
+                  <Link
+                    href={href}
+                    className="tracking-wider text-slate-500 hover:text-slate-900 duration-300 hover:underline underline-offset-4"
+                  >
                     {link.charAt(0).toUpperCase() + link.slice(1)}
                   </Link>
                 </ul>

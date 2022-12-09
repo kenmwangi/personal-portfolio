@@ -15,7 +15,7 @@ const Footer = () => {
                   <Link
                     href={link}
                     target="_blank"
-                    className="leading-tight hover:underline"
+                    className="leading-tight hover:underline underline-offset-4"
                   >
                     {social.charAt(0).toUpperCase() + social.slice(1)}
                   </Link>
