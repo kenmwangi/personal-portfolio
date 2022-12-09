@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
   return (
-    <nav className="py-6 max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav className="py-6 max-w-7xl px-4 sm:px-6 lg:px-8 tracking-wider">
       <div className="flex items-center justify-between mx-auto mt-[30px] mb-[170px]">
         <Link href="/" className="font-Spectral text-3xl font-semibold">
           {Logo}
@@ -20,7 +20,7 @@ const Navbar = () => {
               const { id, href, link } = navLink;
               return (
                 <ul key={id}>
-                  <Link href={href}>
+                  <Link href={href} className="tracking-wider">
                     {link.charAt(0).toUpperCase() + link.slice(1)}
                   </Link>
                 </ul>
@@ -28,7 +28,7 @@ const Navbar = () => {
             })}
           </div>
         ) : (
-          <div className="" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+          <button className="" onClick={() => setIsMenuToggled(!isMenuToggled)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -43,7 +43,7 @@ const Navbar = () => {
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
-          </div>
+          </button>
         )}
 
         {/* MOBILE MENU */}
@@ -69,12 +69,12 @@ const Navbar = () => {
               </button>
             </div>
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white z-50">
               {navLinks.map((navLink) => {
                 const { id, href, link } = navLink;
                 return (
                   <ul key={id}>
-                    <Link href={href}>
+                    <Link href={href} className="tracking-wider">
                       {link.charAt(0).toUpperCase() + link.slice(1)}
                     </Link>
                   </ul>
