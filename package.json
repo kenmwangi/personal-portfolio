@@ -18,15 +18,18 @@
     "esbuild": "^0.14.54",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "framer-motion": "^7.6.19",
     "mdx-bundler": "^9.0.1",
     "next": "13.0.6",
     "react": "18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "18.2.0",
     "typescript": "4.9.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@types/react-anchor-link-smooth-scroll": "^1.0.2",
     "autoprefixer": "^10.4.13",
     "cross-env": "^7.0.3",
     "husky": "^8.0.2",
