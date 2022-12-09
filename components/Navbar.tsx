@@ -9,7 +9,10 @@ const Navbar = () => {
   return (
     <nav className="py-6 max-w-7xl px-4 sm:px-6 lg:px-8 tracking-wider">
       <div className="flex items-center justify-between mx-auto mt-[30px] mb-[170px]">
-        <Link href="/" className="font-Spectral text-3xl font-semibold">
+        <Link
+          href="/"
+          className="font-Spectral text-3xl font-semibold text-[#1B73E8]"
+        >
           {Logo}
         </Link>
 
@@ -22,7 +25,7 @@ const Navbar = () => {
                 <ul key={id}>
                   <Link
                     href={href}
-                    className="tracking-wider text-slate-500 hover:text-slate-900 duration-300 hover:underline underline-offset-4"
+                    className="tracking-wider hover:text-[#1B73E8] text-[#11345a] duration-300 hover:underline underline-offset-8"
                   >
                     {link.charAt(0).toUpperCase() + link.slice(1)}
                   </Link>
