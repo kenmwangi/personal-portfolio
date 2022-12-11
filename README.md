@@ -5,7 +5,7 @@
 ## Motivation
 
 **Goal:** I wanted to have a digital garden to display what I am currently doing, documenting my full-stack journey and share knowledge others.
-
+I wanted to have a space to showcase my projects, inspiration and future interests.
 ## How I started working on this project
 
 The primary focus is to have a simple yet resourceful personal portfolio.
